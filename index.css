@@ -216,6 +216,7 @@ div{
     color: #DDDDDD;
     background-clip: content-box;
     padding: 5px;
+    transition: 0.3s ease-in-out;
 }
 
 .inside-progress-bar{
@@ -227,6 +228,10 @@ div{
     color: white;
     /* padding-left: 10px; */
     padding: 2px 10px;
+}
+
+.progress-bar:hover{
+    transform: scale(1.03, 1.03);
 }
 
 
