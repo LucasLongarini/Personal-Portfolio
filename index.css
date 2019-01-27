@@ -1,0 +1,263 @@
+html{
+    font-family:  sans-serif, Arial, Helvetica;
+}
+
+body{
+    margin: 0;
+    color: #767676;
+}
+
+h1{
+    font-size: 48px;
+    color: #404040;
+    font-weight: 600;
+}
+h2{
+    font-weight: 600;
+}
+
+p{
+    font-size: 24px;
+}
+
+
+nav{
+    background-color: #F2F7FA;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: 0.4s ease-in-out;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+li{
+    padding: 10px 0px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+li a{
+    padding-left: 60px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#links{
+    display: flex;
+    margin-left: auto;
+}
+
+.top{
+    padding-top: 300px;
+    padding-bottom: 200px;
+    background-color: #F2F7FA;
+}
+
+.top-container{
+    width: 80%;
+    margin: auto;
+}
+
+.top-picture-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#profile-picture{
+    text-align: center;
+    margin-bottom: auto;
+}
+
+#profile-picture img{
+    border-radius: 10px;
+    box-shadow: 0px 3px 18px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-references{
+    background-color: white;
+    padding: 5px;
+    margin-top: -7vh;
+    border-radius: 100vh;
+    box-shadow: 0px 8px 18px 5px rgba(0, 0, 0, 0.09);
+    display: grid;
+    z-index: 1;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.top-ref-container{
+    text-align: center;
+    padding: 5px 0px;
+    margin:auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.top-ref-container:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.top-ref-container p{
+    font-size: 18px;
+    margin: -5px 0px 0px 0px;
+}
+
+
+
+.middle{
+    width:80%;
+    margin: auto;
+}
+
+.about p{
+    width: 60%;
+}
+
+
+.portfolio h1{
+    float: right;
+}
+
+div{
+    clear: right;
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+
+.portfolio-grid-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px 2px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.portfolio-grid-container:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.portfolio-grid-container img{
+    display: block;
+    margin: 20px auto;
+}
+
+.portfolio-grid-container h2{
+    margin:0px 0px 0px 10px;
+    font-size: 24px;
+}
+.portfolio-grid-container p{
+    margin:0px 0px 10px 10px;
+    font-size: 18px;
+}
+
+
+.skills-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 18px 5px rgba(0, 0, 0, 0.09);
+    width: 60%;
+    padding: 1px 30px;
+    margin: 0px;
+}
+
+.progress-container{
+    display: flex;
+}
+
+.progress-bar{
+    width: 100%;
+    border-width: 1px;
+    margin: 27px 0px 27px 10px;
+    border-radius: 100vh;
+    border-style: solid;
+    border-width: 1px;
+    color: #DDDDDD;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+.inside-progress-bar{
+    width: 70%;
+    border-radius: 100vh;
+    background-color: black;
+    background-image: linear-gradient(to right, #8390FC , #62BDFC);
+    box-shadow: 3px 10px 18px 0px rgba(104, 176, 246, 0.5);
+    color: white;
+    padding-left: 10px;
+}
+
+
+.progress-text{
+    width: 150px;
+}
+
+#c-progress{width: 70%}
+#java-progress{width: 80%}
+#swift-progress{width: 90%}
+#javascript-progress{width: 70%}
+#html-css-progress{width: 70%}
+#sql-progress{width: 90%}
+#node-progress{width: 80%}
+#php-progress{width: 60%}
+
+
+
+footer{
+    background-color: #404040;
+    color: white;
+    position: bottom;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer h2{
+    font-size: 36px;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0px 30px;
+}
+
+.contact-info{
+    width:80%;
+    margin: auto;
+    display: grid;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1039px) {
+    .top-picture-container{
+        grid-template-columns: repeat(auto-fill, minmax(409px, 1fr));
+    }
+
+    #profile-picture{
+        text-align: left;
+    }
+
+    .top{
+        padding-top: 20px;
+    }
+}
