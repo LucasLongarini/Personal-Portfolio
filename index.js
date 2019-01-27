@@ -1,5 +1,5 @@
 const navBar = document.getElementsByTagName("nav")[0];
-
+const homeButton = document.getElementById('home');
 
 
 var scrolled = false;
@@ -28,3 +28,8 @@ function scrollFunction(pageOffset){
         navSticky = false;
     }
 }
+
+
+homeButton.onclick = function(){
+  window.location.href = "index.html";
+};

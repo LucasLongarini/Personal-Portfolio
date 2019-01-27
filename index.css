@@ -20,6 +20,27 @@ p{
     font-size: 24px;
 }
 
+button{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 100vh;
+    background-color: rgba(0, 0, 0, 0.00);
+    border-style: solid;
+    border-width: 3px;
+    border-color: #767676;
+    color: #767676;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    color: #1f1f1f;
+    font-weight: 700;
+    border-color: #1f1f1f;
+    transform: scale(1.05,1.05);
+}
+
 
 nav{
     background-color: #F2F7FA;
@@ -50,7 +71,7 @@ li{
 }
 
 li a{
-    padding-left: 60px;
+    margin: 0px 30px;
     color: black;
     text-decoration: none;
     font-size: 16px;
@@ -58,7 +79,7 @@ li a{
 }
 
 li a:hover{
-   font-weight: bolder;
+   font-weight: bold;
 }
 
 #links{
@@ -70,6 +91,13 @@ li a:hover{
     padding-top: 300px;
     padding-bottom: 200px;
     background-color: #F2F7FA;
+}
+
+.top-other{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #F2F7FA;
+    text-align: center;
 }
 
 .top-container{
@@ -128,12 +156,16 @@ li a:hover{
     margin: auto;
 }
 
+.about{
+    margin-top:100px;
+}
+
 .about p{
     width: 60%;
 }
 
 .portfolio{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .portfolio h1{
@@ -180,7 +212,7 @@ div{
 }
 
 .skills{
-    margin-top:200px;
+    margin-top:100px;
 }
 
 .skills-title{
@@ -256,7 +288,7 @@ footer{
     position: bottom;
     text-align: center;
     padding: 20px 0px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 footer h2{
