@@ -51,6 +51,13 @@ nav{
     transition: 0.4s ease-in-out;
 }
 
+.nav-home{
+    cursor: pointer;
+}
+.nav-scroll{
+    cursor: pointer;
+}
+
 .main-nav{
     display: flex;
     list-style: none;

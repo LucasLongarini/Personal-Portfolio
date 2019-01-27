@@ -1,5 +1,7 @@
 const navBar = document.getElementsByTagName("nav")[0];
 const homeButton = document.getElementById('home');
+const navHome = document.getElementsByClassName("nav-home");
+const navScroll = document.getElementsByClassName("nav-scroll");
 
 
 var scrolled = false;
@@ -18,7 +20,6 @@ setInterval(function(){
 
 var navSticky = false;
 function scrollFunction(pageOffset){
-    console.log(pageYOffset);
     if(pageOffset > 70 && !navSticky){
         navBar.style.boxShadow = "0px 3px 18px 5px rgba(0, 0, 0, 0.15)"
         navSticky = true;
@@ -29,7 +30,36 @@ function scrollFunction(pageOffset){
     }
 }
 
+if(homeButton != null){
+  homeButton.onclick = function(){
+    goHome();
+  };
+}
 
-homeButton.onclick = function(){
+
+for(let i = 0; i<navHome.length; i++){
+  navHome[i].addEventListener("click", function(){
+    goHome();
+  });
+}
+
+function goHome(){
   window.location.href = "index.html";
-};
+}
+
+for(let i = 0; i <navScroll.length; i++){
+  navScroll[i].addEventListener("click", function(){
+    scrollTop();
+  });
+}
+
+function scrollTop(){
+  var scrollToTop = window.setInterval(function() {
+    var pos = window.pageYOffset;
+    if ( pos > 0 ) {
+        window.scrollTo( 0, pos - 20 ); // how far to scroll on each step
+    } else {
+        window.clearInterval( scrollToTop );
+    }
+  }, 4);
+}
