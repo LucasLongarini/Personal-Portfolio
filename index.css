@@ -38,6 +38,10 @@ nav{
     padding: 0;
 }
 
+.main-nav img{
+    margin-left: 10px;
+}
+
 li{
     padding: 10px 0px;
     color: black;
@@ -51,6 +55,10 @@ li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: normal;
+}
+
+li a:hover{
+   font-weight: bolder;
 }
 
 #links{
@@ -124,6 +132,9 @@ li a{
     width: 60%;
 }
 
+.portfolio{
+    margin-top: 200px;
+}
 
 .portfolio h1{
     float: right;
@@ -148,7 +159,10 @@ div{
 }
 
 .portfolio-grid-container:hover{
-    transform: scale(1.05, 1.05);
+    /* transform: scale(1.05, 1.05); */
+    /* background-color: rgb(255, 68, 0); */
+    transform: translate(0px, -10px);
+
 }
 
 .portfolio-grid-container img{
@@ -165,6 +179,19 @@ div{
     font-size: 18px;
 }
 
+.skills{
+    margin-top:200px;
+}
+
+.skills-title{
+    width:  60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-title h2{
+    margin: auto 0px;
+}
 
 .skills-container{
     background-color: white;
@@ -182,7 +209,7 @@ div{
 .progress-bar{
     width: 100%;
     border-width: 1px;
-    margin: 27px 0px 27px 10px;
+    margin: 25px 0px 25px 10px;
     border-radius: 100vh;
     border-style: solid;
     border-width: 1px;
@@ -198,7 +225,8 @@ div{
     background-image: linear-gradient(to right, #8390FC , #62BDFC);
     box-shadow: 3px 10px 18px 0px rgba(104, 176, 246, 0.5);
     color: white;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding: 2px 10px;
 }
 
 
@@ -223,6 +251,7 @@ footer{
     position: bottom;
     text-align: center;
     padding: 20px 0px;
+    margin-top: 200px;
 }
 
 footer h2{
