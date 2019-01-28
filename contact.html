@@ -16,31 +16,41 @@
             <img src="Images/Icon.png" alt="Personal Icon" height="40px" class = "nav-home">
             <div id = "links">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href=""><Strong>ABOUT</Strong></a></li>
+                <li><a href="about.html">ABOUT</a></li>
                 <li><a href="portfolio.html">PORTFOILO</a></li>
                 <li><a href="skills.html">SKILLS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href=""><Strong>CONTACT</Strong></a></li>
             </div>
         </ul>
     </nav>
 
     <div class = "top-other">
         <div class = "top-container">
-            <h1>About</h1>
+            <h1>Contact</h1>
             <button id = "home">Home</button>
         </div>
     </div>
 
     <div class = "middle">
+        <form class="submit-contact" action="mailto:lucaslongarini0@gmail.com" method="post" enctype="text/plain">
+            <h1>Send me a message</h1>
 
-        <div class = "about">
-            <h1>About myself</h1>
-            <p>
-                I am a current 3rd year software engineering student at the University of Calgary. I am very passionate towards software and have been working on quite a few personal projects outside of school. I am a very hard worke, love learning new technologies and creating new products. 
-            </p>
-        </div>
+            <div class = "input-field">
+                <input type="text" placeholder="Your Name" required="required" name = "name">
+            </div>
 
+            <div class = "input-field">
+                <input type="text" placeholder="Your Email" required="required" name="mail">
+            </div>
 
+            <div class = "input-field">
+                    <input type="text" placeholder="Subject" required="required" name="subject">
+            </div>
+
+            <textarea  rows="10" placeholder="Your Message" required="required" wrap="soft" name = "comment"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
     </div>
 
     <footer>
