@@ -188,7 +188,7 @@ div{
 
 .portfolio-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
 
 .portfolio-grid-container{
@@ -473,6 +473,16 @@ footer p{
     .main-nav{display: flex;}
     #links{ display: none}
     .dropdown {display: inline-block;}
+
+    .submit-contact{
+        width: 90%;
+        padding: 30px 30px 80px 30px;
+    }
+    .submit-contact h1{font-size: 30px;}
+    input[type="submit"]{
+        padding: 16px 8px;
+        width: 80px;
+    }
 }
 
 
@@ -496,5 +506,9 @@ footer p{
         width: 80%;
         margin: auto;
     }
+    .top-container{width: 90%}
+    .main-nav{width: 90%}
+    .middle{width: 90%}
+    .contact-info{width: 90%}
 }
 
