@@ -70,6 +70,7 @@ nav{
     margin-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
+    height: 30px;
 }
 
 li{
@@ -187,7 +188,7 @@ div{
 
 .portfolio-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .portfolio-grid-container{
@@ -225,7 +226,7 @@ div{
 }
 
 .skills-title{
-    width:  60%;
+    width:  80%;
     display: flex;
     justify-content: space-between;
 }
@@ -238,13 +239,14 @@ div{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 8px 18px 5px rgba(0, 0, 0, 0.09);
-    width: 60%;
-    padding: 1px 30px;
+    width: 80%;
+    padding: 1px 0px;
     margin: 0px;
 }
 
 .progress-container{
     display: flex;
+    padding: 0px 30px;
 }
 
 .progress-bar{
@@ -373,12 +375,17 @@ footer p{
 
 
 
+@media only screen and (max-width: 1250px) {
+    li a{
+        margin: 0px 15px; 
+    }
+}
 
 
-
-@media only screen and (max-width: 1039px) {
+@media only screen and (max-width: 1100px) {
     .top-picture-container{
-        grid-template-columns: repeat(auto-fill, minmax(409px, 1fr));
+        display: flex;
+        flex-direction: column;
     }
 
     #profile-picture{
@@ -386,6 +393,46 @@ footer p{
     }
 
     .top{
-        padding-top: 20px;
+        padding-top: 175px;
+    } 
+
+    .top-picture-container-grid h1{
+        margin: 0px;
     }
+
+    .top-picture-container-grid p{
+        margin-bottom: 50px;
+    }
+
+
+    /* li a{
+        margin: 0px 10px; 
+    } */
+
+    /* #links{
+        display: none;
+    } */
+}
+
+
+@media only screen and (max-width: 950px) {
+    .skills-container{
+        width: 100%;
+    }
+    .skills-title{
+        width: 100%;
+    }
+    .about p{
+        width: 100%;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links{
+        display: none;
+    }
+
 }

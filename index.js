@@ -2,6 +2,9 @@ const navBar = document.getElementsByTagName("nav")[0];
 const homeButton = document.getElementById('home');
 const navHome = document.getElementsByClassName("nav-home");
 const navScroll = document.getElementsByClassName("nav-scroll");
+const linkdin = document.getElementById("linkdin");
+const github = document.getElementById("github");
+
 
 
 var scrolled = false;
@@ -34,6 +37,18 @@ if(homeButton != null){
   homeButton.onclick = function(){
     goHome();
   };
+}
+
+if(linkdin != null){
+  linkdin.onclick = function(){
+    window.open("https://www.linkedin.com/in/lucas-longarini-96866515b", "_blank")
+  }
+}
+
+if(github != null){
+  github.onclick = function(){
+    window.open("https://github.com/LucasLongarini", "_blank")
+  }
 }
 
 
