@@ -393,6 +393,7 @@ footer p{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 4px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /* z-index: 1; */
@@ -491,6 +492,9 @@ footer p{
     nav{padding: 10px 0px;}
     h1{font-size: 40px;}
     h2{font-size: 24px;}
+    .progress-container{
+        padding: 0px 15px;
+    }
     .progress-container p{font-size: 20px;}
     .top-references{
         grid-template-columns: 150px 150px;
