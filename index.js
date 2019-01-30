@@ -4,7 +4,10 @@ const navHome = document.getElementsByClassName("nav-home");
 const navScroll = document.getElementsByClassName("nav-scroll");
 const linkdin = document.getElementById("linkdin");
 const github = document.getElementById("github");
-
+const cinemaSearch = document.getElementById("cinema-search");
+const ioweyou = document.getElementById("ioweyou");
+const forumApi = document.getElementById("forum-api");
+const personalWebsite = document.getElementById("personal-website");
 
 
 var scrolled = false;
@@ -78,3 +81,21 @@ function scrollTop(){
     }
   }, 4);
 }
+
+
+// Portfolio links
+cinemaSearch.addEventListener('click', function(){
+  window.open("https://itunes.apple.com/us/app/cinema-search/id1442019304?ls=1&mt=8", "_blank")
+});
+
+ioweyou.addEventListener('click', function(){
+  window.open("https://itunes.apple.com/us/app/ioweyou-loans-tracker/id1428210239", "_blank")
+});
+
+forumApi.addEventListener('click', function(){
+  window.open("https://github.com/LucasLongarini/ForumApp", "_blank")
+});
+
+personalWebsite.addEventListener('click', function(){
+  window.open("https://github.com/LucasLongarini/Personal-Portfolio", "_blank")
+});
