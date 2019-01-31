@@ -200,6 +200,37 @@ div{
     transition: 0.4s ease-in-out;
 }
 
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #8390FC;
+    border-radius: 10px;
+}
+
+.overlay-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+  }
+
+.portfolio-grid-container:hover .overlay{opacity: 0.8;}
+.portfolio-grid-container:hover .overlay-text{opacity: 1;}
+
 .portfolio-grid-container:hover{
     /* transform: scale(1.05, 1.05); */
     /* background-color: rgb(255, 68, 0); */
@@ -220,6 +251,7 @@ div{
     margin:0px 0px 10px 10px;
     font-size: 18px;
 }
+
 
 .skills{
     margin-top:100px;
