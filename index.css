@@ -546,5 +546,9 @@ footer p{
     .main-nav{width: 90%}
     .middle{width: 90%}
     .contact-info{width: 90%}
+
+    .portfolio-grid-container:hover{
+        transform: scale(1.05,1.05);
+    }
 }
 
